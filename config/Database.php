@@ -21,5 +21,5 @@
 		";
 	}
   
-  define('SITE_URL', 'http://localhost/kuliah/si/startup_si');
+  define('SITE_URL', 'http://localhost/kuliah/si/git/startup_si');
 ?>

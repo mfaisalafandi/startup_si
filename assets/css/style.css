@@ -1,0 +1,117 @@
+:root {
+  --primary: #2a3456;
+  --second: #4a5d82;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+a:hover {
+  color: rgb(171, 171, 171) !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+h2 {
+  font-weight: 700 !important;
+}
+
+/* Navigation */
+#navbar {
+  background-color: var(--primary) !important;
+}
+
+.navbar-brand .mobileLogo {
+  display: none;
+}
+
+.navbar-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#daftar {
+  background-color: unset !important;
+}
+
+#navbar a button {
+  color: white;
+  border-radius: 5px;
+  padding: 4px 18px;
+  background-color: var(--second);
+}
+
+#navbar a button:hover {
+  background-color: #191f33;
+}
+
+/* Hero Section */
+
+.container-fluid {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./../img/bg-hero.png);
+}
+
+.titleHero h1 {
+  font-weight: 700;
+}
+.titleHero p {
+  font-size: 20px;
+}
+
+.titleHero input {
+  width: 70%;
+  padding: 10px 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+/* Event Section */
+.card {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.hiddenImg {
+  background-color: aliceblue;
+  overflow-y: hidden;
+  height: 200px;
+}
+
+.hiddenImg img {
+  height: 100%;
+}
+
+.card-body .card-title {
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.container-footer {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Media Screen */
+@media screen and (max-width: 576px) {
+  .navbar-brand .mobileLogo {
+    display: unset;
+  }
+  .navbar-brand .deskLogo {
+    display: none;
+  }
+  .titleEvent {
+    padding: 10px;
+    text-align: center;
+  }
+}
