@@ -21,7 +21,6 @@
                     $password_hash = password_hash($password, PASSWORD_DEFAULT, ['cost' => 10]);
 
                     $query = $conn->query("INSERT INTO tb_akun VALUES('', '$username', '$password_hash', '1')");
-					die();
                     if ($query) {
                         $id_akun = $conn->query("SELECT id_akun FROM tb_akun WHERE username = '$username'")->fetch_assoc()['id_akun'];
 						$query = $conn->query("INSERT INTO tb_pengguna VALUES('', '$nama_pengguna', '$telp', '$alamat', '0', '0', '$id_akun')");
