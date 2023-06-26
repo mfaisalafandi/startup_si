@@ -47,7 +47,7 @@
 							$query = $conn->query("UPDATE tb_transaksi_tiket SET status_bayar = '1', bukti_bayar = '$nama_foto_baru' WHERE id_transaksi_tiket = '$id_transaksi_tiket'");
 
 							if ($query) {
-								alert('../index.php', 'BERHASIL', 'Pembayaran Berhasil', 'success');
+								alert('./../../../index.php', 'BERHASIL', 'Pembayaran Berhasil', 'success');
 							} else {
 								alert('../bayar.php?id='.$id_transaksi_tiket, 'GAGAL', 'Ada yang salah!', 'error');
 							}
